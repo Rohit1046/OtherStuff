@@ -40,10 +40,11 @@ def retrieveFeedback():
     textbox.delete(1.0, tk.END)  # Clear the textbox
     textbox.insert(tk.END, result)  # Insert the content
 # Add an "Open" button to open the file dialog
-button = tk.Button(root, text="Open Text File", command=open_file,bg="lightblue",fg="black",activebackground="lightblue",activeforeground="black",highlightthickness=2,highlightbackground="lightblue")
+button = tk.Button(root, text="Open Text File of Student Work", command=open_file,bg="lightblue",fg="black",activebackground="lightblue",activeforeground="black",highlightthickness=2,highlightbackground="lightblue")
 button.pack(pady=10)
 
-button2 = tk.Button(root, text="Submit", command=retrieveFeedback,bg="black",fg="black",activebackground="black",activeforeground="black",relief="solid",bd=2,highlightthickness=2,highlightbackground="lightblue")
+
+button2 = tk.Button(root, text="Submit to AI Grader", command=retrieveFeedback,bg="lightblue",fg="black",activebackground="lightblue",activeforeground="black",highlightthickness=2,highlightbackground="lightblue")
 button2.pack(pady=10)
 
 
